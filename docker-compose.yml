@@ -1,0 +1,20 @@
+version: '2'
+services:
+
+  www:
+    build: www/.
+    ports:
+      - "5000:80"
+    links:
+      - db
+    depends_on:
+      - db
+
+  db:
+    build: db/.
+    ports:
+      - "5050:3306"
+    volumes:
+      - /var/lib/mysql
+    environment:
+       MYSQL_ROOT_PASSWORD: supersecure

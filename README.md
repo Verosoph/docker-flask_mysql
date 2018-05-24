@@ -1,5 +1,8 @@
 # Flask App with MySQL Database
 
+
+## source: https://github.com/geerlingguy/docker-examples
+
 ## Quick Start
 
   1. Run `docker-compose up`
